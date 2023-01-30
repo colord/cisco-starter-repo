@@ -1,11 +1,24 @@
 import { useState } from 'react'
 import './App.css'
+import Banner from './components/Banner';
+import Exhibit from './components/Exhibit';
 
 function App() {
 
   return (
     <div className="App">
-      <h2>Cisco Dashboard</h2>
+      <Banner title='Sextant Dashboard' />
+      <div className="metrics">
+        <Exhibit title='IP Address'>
+          <p>192.168.1.1</p>
+        </Exhibit>
+        <Exhibit title='Latency'>
+          <p>26ms</p>
+        </Exhibit>
+        <Exhibit title='3rd Metric'>
+          <p>0xDEADBEEF</p>
+        </Exhibit>
+      </div>
     </div>
   )
 }
