@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner';
 import Exhibit from './components/Exhibit';
+import Latency from './components/Latency';
 import RequestIP from './components/RequestIP';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <RequestIP version='v6' />
         </Exhibit>
         <Exhibit title='Latency'>
-          <p className='small-metric'>26ms</p>
+          <Latency />
         </Exhibit>
         <Exhibit title='3rd Metric'>
           <p>0xDEADBEEF</p>
